@@ -1,0 +1,214 @@
+local Players = game:GetService("Players")
+local plr = Players.LocalPlayer
+
+print(plr.Name .. " is running 3x Speed Auto Farm Script")
+
+local rs = game:GetService("ReplicatedStorage")
+local remotes = rs:WaitForChild("RemoteFunctions")
+
+task.delay(2, function()
+    pcall(function()
+        remotes.ToggleAutoSkip:InvokeServer(true)
+        warn("[System] Auto Skip Enabled")
+    end)
+end)
+
+warn("[System] Loaded 3x Speed Script")
+remotes.ChangeTickSpeed:InvokeServer(3)
+
+local difficulty = "dif_impossible"
+local placements = {
+    {
+        time = 33, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.2484130859375),
+            DistanceAlongPath = 235.51700472831726,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.2484130859375, -1, 0, 0, 0, 1, 0, 0, 0, -1),
+            Rotation = 180
+        }
+    },
+    {
+        time = 50, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 52, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 55, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 76, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.1287841796875),
+            DistanceAlongPath = 235.39737582206726,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.1287841796875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 80, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.1287841796875),
+            DistanceAlongPath = 235.39737582206726,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.1287841796875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 82, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 94, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 96, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 98, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 100, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 102, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 104, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 123, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    },
+    {
+        time = 124, unit = "unit_log_roller", slot = "1",
+        data = {
+            Valid = true,
+            PathIndex = 1,
+            Position = Vector3.new(-335.41595458984375, 61.93030548095703, -840.038330078125),
+            DistanceAlongPath = 235.30692172050476,
+            Rotation = 180,
+            CF = CFrame.new(-335.41595458984375, 61.93030548095703, -840.038330078125, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+        }
+    }
+}
+
+local function placeUnit(unitName, slot, data)
+    remotes.PlaceUnit:InvokeServer(unitName, data)
+    warn("[Placing] "..unitName.." at "..os.clock())
+end
+
+local function startGame()
+    remotes.PlaceDifficultyVote:InvokeServer(difficulty)
+    for _, p in ipairs(placements) do
+        task.delay(p.time, function()
+            placeUnit(p.unit, p.slot, p.data)
+        end)
+    end
+end
+
+while true do
+    startGame()
+    task.wait(128)
+    remotes.RestartGame:InvokeServer()
+end
+
+
+
+
+
+
+loadstring(game:HttpGet("https://pastebin.com/raw/HkAmPckQ"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/Anti-afk/main/antiafkbyhassanxzyn"))()
