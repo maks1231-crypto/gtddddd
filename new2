@@ -201,7 +201,7 @@ end
 
 while true do
     startGame()
-    task.wait(128)
+    task.wait(138)
     remotes.RestartGame:InvokeServer()
 end
 
