@@ -13,8 +13,8 @@ task.delay(2, function()
     end)
 end)
 
-warn("[System] Loaded 3x Speed Script")
-remotes.ChangeTickSpeed:InvokeServer(3)
+warn("[System] Loaded 2x Speed Script")
+remotes.ChangeTickSpeed:InvokeServer(2)
 
 local difficulty = "dif_impossible"
 local placements = {
